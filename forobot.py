@@ -52,7 +52,7 @@ async def on_message(message):
                         "Version: 0.3a"
 
         )
-        
+
         await client.send_message(message.channel, embed=info)
 
     # This command shows help command
@@ -64,8 +64,8 @@ async def on_message(message):
             'flip, ping, help, info, roll, say'
 
         )
-        
+
         await client.send_message(message.channel, embed=help)
 
-# Bot initialization on Heroku
-Client.run(str(os.environ.get('BOT_TOKEN')))
+# Bot token to work properly
+client.run('BOT_TOKEN')
