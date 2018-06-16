@@ -1,0 +1,13 @@
+{
+"name": "Foro",
+"description: "This Discord bot is used to help admin with commands and bring fun to the server",
+"version": "0.1a",
+"main": "forobot.py",
+"scripts": {
+  "start": "node forobot.py"
+ }
+ "dependencies": {
+  "discord.js": "11.1.0",
+  "request": "2.81.0"
+ }
+}
