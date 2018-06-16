@@ -9,7 +9,7 @@ Contributors: No one actually :( Feel free to contribute.
 <br>
 <br>
 # Commands
-All the commands listed bellow are used with "/".<br>
+All the commands listed bellow are used with ";".<br>
 Do not forget to use it.<br>
 <br>
 <strong>flip</strong> - Flip a coin and results in a emoticon that means heads or tails.<br>
