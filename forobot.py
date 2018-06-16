@@ -11,6 +11,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from random import randint
+import os
 
 Client = discord.Client()
 client = commands.Bot(command_prefix=';')
@@ -30,7 +31,7 @@ async def on_message(message):
         await client.send_message(message.channel, '<%s>:ping_pong: **Pong!**' % userID)
 
     # This command make the bot says anything
-    if message.content.lower().startswith(';SAY'):
+    if message.content.lower().startswith(';say'):
         args = message.content.split(' ')
         await client.send_message(message.channel, "%s" % (' '.join(args[1:])))
 
@@ -38,16 +39,16 @@ async def on_message(message):
     if message.content.lower().startswith(';flip'):
         choice = randint(1, 2)
         if choice == 1:
-            await client.send_message(message.chanell, ':performing_arts:')
+            await client.send_message(message.channel, ':performing_arts:')
         if choice == 2:
-            await client.send_message(message.chanell, ':crown:')
+            await client.send_message(message.channel, ':crown:')
 
     # Author's and bot information!
     if message.content.lower().startswith(';info'):
         info = discord.Embed(
             title="I am IRO... I mean, Foro Bot!",
             color=0x751be2,
-            description="Obrigado por usar o Foro Bot/Thank you for use Foro Bot:\n"
+            description="Obrigado por usar o Foro Bot/Thank you for using Foro Bot:\n"
                         "If you have any suggestions or found bugs in this bot, contact me at:\n"
                         "DiscordID: Foromir#5783\n"
                         "Twitter: _kleb"
@@ -73,4 +74,4 @@ async def on_message(message):
 
 
 # Bot token to work properly
-client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno")
+client.run("DU3NTA4NDI5MDYyMzQwNjA4.Dgb3RA.UGI9k0uxsbpRBL_4PbVJcjEGElE")
