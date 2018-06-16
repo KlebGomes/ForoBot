@@ -3,6 +3,5 @@ requests==2.3.0
 python-binary-memcached==0.24.2
 pyquery==1.2.8
 discord
-os
 asyncio
 pip
