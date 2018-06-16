@@ -24,7 +24,7 @@ async def on_ready():
 async def on_message(message):
     if message.content.lower().startswith(';ping'):
         userID = message.author.id
-        await client.send_message(message.channel, ":ping_pong: **Pong!** {0}".format(round(Client.latency, 1)))
+        await client.send_message(message.channel, ":ping_pong: **Pong!** {0}".format(round(client.latency, 1)))
 
     if message.content.lower().startswith(';SAY'):
         args = message.content.split(' ')
@@ -59,7 +59,8 @@ async def on_message(message):
             title='Commands and help bellow',
             color=0x751be2,
             description='Here is a list of all Foro\'s commands\n'
-            'flip, ping, help, info, roll, '
+            'flip, ping, help, info, roll, say'
+
         )
 
 # Bot token to work properly
