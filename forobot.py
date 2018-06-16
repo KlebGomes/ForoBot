@@ -9,7 +9,6 @@ Version: 0.3a
 import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
-import config
 import asyncio
 from random import randint
 import os
@@ -74,5 +73,5 @@ async def on_message(message):
         await client.send_message(message.channel, embed=help)
 
 
-# Bot initialization on Heroku
-Client.run(str(os.environ.get(config.BOT_TOKEN)))
+# Bot token for Heroku
+Client.run(str(os.environ.get('BOT_TOKEN')))
