@@ -56,7 +56,7 @@ async def on_message(message):
                         "Version: 0.1a"
 
         )
-
+        await client.send_message(message.channel, embed=info)
 
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
 
