@@ -11,53 +11,58 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from random import randint
-import time
 
 Client = discord.Client()
-client = commands.Bot(command_prefix = "")
+client = commands.Bot(command_prefix = ';')
 
 @client.event
 async def on_ready():
     print('Bot is online and ready!')
-    await client.change_presence(game=discord.Game(name="To know the commands, just say /help"))
+    await client.change_presence(game=discord.Game(name="Commands? Just say ;help"))
 
 @client.event
 async def on_message(message):
-    if message.content.upper().startswith('/PING'):
+    if message.content.lower().startswith(';ping'):
         userID = message.author.id
-        await client.send_message(message.channel, "<@%s> :ping_pong: **Pong!**" % (userID))
-    if message.content.upper().startswith('/SAY'):
+        await client.send_message(message.channel, ":ping_pong: **Pong!** {0}".format(round(Client.latency, 1)))
+
+    if message.content.lower().startswith(';SAY'):
         args = message.content.split(' ')
-        #args [0] = !SAY
-        #args [1] = Hey
-        #args [2] = There
-        #args [1:] = Hey There
         await client.send_message(message.channel, "%s" % (' '.join(args[1:])))
 
-    # This commands make the bot flip a coin
-    if message.content.lower().startswith('/flip'):
+    # This command makes the bot flip a coin
+    if message.content.lower().startswith(';flip'):
         choice = randint(1, 2)
         if choice == 1:
-            await client.add_reaction(message, '🌑')
+            await client.add_reaction(message, ':performing_arts:')
         if choice == 2:
-            await client.add_reaction(message, '🌕')
+            await client.add_reaction(message, ':crown:')
 
     # Author's and bot information!
-    if message.content.lower().startswith("/info"):
+    if message.content.lower().startswith(";info"):
         info = discord.Embed(
             title="I am IRO... I mean, Foro Bot!",
-            color=0xe74c3c,
+            color=0x751be2,
             description="Obrigado por usar o Foro Bot/Thank you for use Foro Bot:\n"
                         "If you have any suggestions or found bugs in this bot, contact me at:\n"
                         "DiscordID: Foromir#5783\n"
                         "Twitter: _kleb"
                         "\n"
                         "\n"
-                        "Version: 0.1a"
+                        "Version: 0.3a"
 
         )
-        await client.send_message(message.channel, embed=info)
 
+    # This command shows help command
+    if message.content.lower().startswith(';help'):
+        help = discord.Embed(
+            title='Commands and help bellow',
+            color=0x751be2,
+            description='Here is a list of all Foro\'s commands\n'
+            'flip, ping, help, info, roll, '
+        )
+
+# Bot token to work properly
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
 
 # Bot initialization on Heroku
