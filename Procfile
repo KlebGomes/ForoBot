@@ -1,1 +1,1 @@
-worker: node fotobot.py
+worker: python fotobot.py
