@@ -3,7 +3,7 @@ A great bot for discord with a ton of commands for admins and fun.<br>
 It's hosted at Heroku.com, for free.<br><br>
 
 # Info
-Version: 0.1a (alpha version 0.1)<br>
+Version: 0.3a (alpha version 0.3)<br>
 Author: Kleberson "Foromir" Gomes<br>
 Contributors: No one actually :( Feel free to contribute.
 <br>
