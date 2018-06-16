@@ -68,4 +68,4 @@ async def on_message(message):
         await client.send_message(message.channel, embed=help)
 
 # Bot token to work properly
-client.run('BOT_TOKEN')
+client.run(BOT_TOKEN)
