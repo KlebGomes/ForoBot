@@ -52,6 +52,8 @@ async def on_message(message):
                         "Version: 0.3a"
 
         )
+        
+        await client.send_message(message.channel, embed=info)
 
     # This command shows help command
     if message.content.lower().startswith(';help'):
@@ -62,6 +64,8 @@ async def on_message(message):
             'flip, ping, help, info, roll, say'
 
         )
+        
+        await client.send_message(message.channel, embed=help)
 
 # Bot token to work properly
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
