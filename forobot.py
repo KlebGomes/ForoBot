@@ -34,3 +34,6 @@ async def on_message(message):
         await client.send_message(message.channel, "%s" % (' '.join(args[1:])))
 
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
+
+# Bot initialization on Heroku
+client.login(process.ev.BOT_TOKEN);
