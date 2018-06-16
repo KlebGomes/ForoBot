@@ -72,9 +72,5 @@ async def on_message(message):
         await client.send_message(message.channel, embed=help)
 
 
-# Bot token for Heroku
-Client.run(str(os.environ.get('NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno')))
-
-
 # Bot token to work properly
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno")
