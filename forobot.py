@@ -3,7 +3,7 @@ Name: ForoBot
 Description: This Discord bot is used to help admin with commands and bring fun to the server
 Author: Kleberson "Foromir" Gomes
 Author's contact: Twitter.com/_kleb
-Version: 0.3a
+Version: 0.4a
 '''
 
 import discord
@@ -11,6 +11,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from random import randint
+import os
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = ';')
@@ -49,7 +50,7 @@ async def on_message(message):
                         "Twitter: _kleb"
                         "\n"
                         "\n"
-                        "Version: 0.3a"
+                        "Version: 0.4a"
 
         )
 
@@ -67,5 +68,5 @@ async def on_message(message):
 
         await client.send_message(message.channel, embed=help)
 
-# Bot token to work properly on Heroku.com
-client.run('BOT_TOKEN')
+# Bot initialization on Heroku
+Client.run(str(os.environ.get('BOT_TOKEN')))
