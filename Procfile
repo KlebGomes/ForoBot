@@ -1,1 +1,1 @@
-worker: python fotobot.py
+worker: python forobot.py
