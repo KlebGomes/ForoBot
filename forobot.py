@@ -36,4 +36,4 @@ async def on_message(message):
 client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
 
 # Bot initialization on Heroku
-client.run(str(os.environ.get('BOT_TOKEN')))
+Client.run(str(os.environ.get('BOT_TOKEN')))
