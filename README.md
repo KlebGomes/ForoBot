@@ -3,7 +3,8 @@ A great bot for discord with a ton of commands for admins and fun.
 
 # Info
 Version: 0.1a (alpha version 0.1)<br>
-Author: Kleberson "Foromir" Gomes
+Author: Kleberson "Foromir" Gomes<br>
+Contributors: No one actually :( . Feel free to contribute.
 <br>
 <br>
 # Commands
