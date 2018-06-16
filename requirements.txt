@@ -4,5 +4,4 @@ python-binary-memcached==0.24.2
 pyquery==1.2.8
 discord
 asyncio
-time
 pip
