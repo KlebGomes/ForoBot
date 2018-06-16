@@ -74,8 +74,8 @@ async def on_message(message):
 
 
 # Bot token for Heroku
-Client.run(str(os.environ.get('NDU3NTA4NDI5MDYyMzQwNjA4.Dgb3RA.UGI9k0uxsbpRBL_4PbVJcjEGElE')))
+Client.run(str(os.environ.get('NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno')))
 
 
 # Bot token to work properly
-client.run("DU3NTA4NDI5MDYyMzQwNjA4.Dgb3RA.UGI9k0uxsbpRBL_4PbVJcjEGElE")
+client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno")
