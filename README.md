@@ -1,0 +1,2 @@
+# ForoBot
+Bot for discord 
