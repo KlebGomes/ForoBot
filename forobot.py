@@ -3,7 +3,7 @@ Name: ForoBot
 Description: This Discord bot is used to help admin with commands and bring fun to the server
 Author: Kleberson "Foromir" Gomes
 Author's contact: Twitter.com/_kleb
-Version: 0.1a
+Version: 0.3a
 '''
 
 import discord
@@ -24,7 +24,7 @@ async def on_ready():
 async def on_message(message):
     if message.content.lower().startswith(';ping'):
         userID = message.author.id
-        await client.send_message(message.channel, ":ping_pong: **Pong!** {0}".format(round(client.latency, 1)))
+        await client.send_message(message.channel, ':ping_pong: **Pong!**')
 
     if message.content.lower().startswith(';SAY'):
         args = message.content.split(' ')
@@ -34,12 +34,12 @@ async def on_message(message):
     if message.content.lower().startswith(';flip'):
         choice = randint(1, 2)
         if choice == 1:
-            await client.add_reaction(message, ':performing_arts:')
+            await client.send_message(message.chanell, ':performing_arts:')
         if choice == 2:
-            await client.add_reaction(message, ':crown:')
+            await client.send_message(message.chanell, ':crown:')
 
     # Author's and bot information!
-    if message.content.lower().startswith(";info"):
+    if message.content.lower().startswith(';info'):
         info = discord.Embed(
             title="I am IRO... I mean, Foro Bot!",
             color=0x751be2,
@@ -66,9 +66,6 @@ async def on_message(message):
         )
         
         await client.send_message(message.channel, embed=help)
-
-# Bot token to work properly
-client.run("NDU3NTA4NDI5MDYyMzQwNjA4.DgaV2g.ZH5iQ1JYY4Sx89eZl00NQORmOro")
 
 # Bot initialization on Heroku
 Client.run(str(os.environ.get('BOT_TOKEN')))
