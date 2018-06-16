@@ -11,7 +11,6 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from random import randint
-import os
 
 Client = discord.Client()
 client = commands.Bot(command_prefix=';')
