@@ -18,8 +18,8 @@ Do not forget to use it.<br>
 <strong>say</strong> - Makes the bot say something.<br>
 <strong>help</strong> - Help with commands and others.
 
-#Changelog
-0.4 - Changed all the code to a new one, from zero and added new fatures and commands.
-0.3 - Fixed bugs and added new commands.
-0.2 - Added some features and commands help and info.
-0.1 - Created the bot with simple tasks and code.
+# Changelog
+0.4 - Changed all the code to a new one, from zero and added new fatures and commands.<br>
+0.3 - Fixed bugs and added new commands.<br>
+0.2 - Added some features and commands help and info.<br>
+0.1 - Created the bot with simple tasks and code.<br>
