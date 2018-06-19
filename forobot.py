@@ -10,7 +10,7 @@ import discord
 from discord.ext.commands import Bot
 import random
 
-TOKEN = 'NDU3NTA4NDI5MDYyMzQwNjA4.DgcRqA.tg2IQwdBkmUP0_shV7ROg90-Rno'
+TOKEN = 'XXXXXXXXXXXXXXXXX'
 BOT_PREFIX = ';'
 client = Bot(command_prefix=BOT_PREFIX)
 
