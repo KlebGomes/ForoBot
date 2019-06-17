@@ -22,5 +22,5 @@ Do not forget to use it.<br>
 These are future commands I want to implement in next updates.<br><br>
 <strong>ping</strong> - Make it work properly.<br>
 <strong>roll</strong> - Roll dices for RPG, from d6 to d20.<br>
-<strong>npc</strong> - Generate common NPC's (maybe?).
+<strong>npc</strong> - Generate common NPC's (maybe?).<br>
 <strong>dnd</strong> - Generate D&D atributes (maybe?).
